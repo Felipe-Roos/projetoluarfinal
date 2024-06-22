@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFEEF5;
+    color: #5A3E42;
+}
+
+.header {
+    background-color: #C46D8D;
+    padding: 10px;
+    text-align: center;
+}
+
+.header img {
+    width: 100px;
+}
+
+nav {
+    background-color: #C46D8D;
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 15px;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a {
+    position: relative;
+    display: flex;
+    margin: 5px;
+    padding: 3px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover{
+    color: #3E5650;
+    background-color:#FFDDC8 ;
+    border-radius: 5px;
+}
+
+
+.container {
+    padding: 20px;
+    text-align: center;
+}
+
+.coupon {
+    background-color: #FFEEF5;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+.coupon img {
+    width: 330px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 20px;
+}
+
+.product {
+    background-color: #FFEEF5;
+    padding: 10px;
+    border-radius: 10px;
+    border:5px solid rgb(231, 195, 207);
+    text-decoration: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #3E5650;
+    
+}
+
+.quality {
+    text-align: left;
+    margin-top: 40px;
+}
+
+.quality img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1   );
+}
+
+.quality p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer {
+    background-color: #FFEEF5;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    align-items: center;
+}
+
+.footer img {
+    width: 30px;
+}

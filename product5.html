@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vela Aromática Vinho e Especiarias - Luar</title>
+    <link rel="stylesheet" href="CSS/produto.css">
+</head>
+<body>
+    <div class="header">
+        <img src="img/logo.png" alt="Luar">
+    </div>
+    <div class="back-button">
+        <button onclick="history.back()">Voltar</button>
+    </div>
+    <div class="container">
+        <div class="product">
+            <img src="img/vela5.png" alt="Vela Aromática Oh, Happy Day!">
+            <h3>Vela Aromática Unique <br><span>170g</span></h3>
+            <p>R$119,90</p>
+            <div class="content-container">
+                <button class="toggle-button" data-target="content1" >Descrição do item</button>
+                <div  class="content-texto" id="content1" >
+                    <p>Estas são as informações que podem ser exibidas ou ocultadas. Você pode colocar qualquer conteúdo aqui, como texto, imagens, vídeos, etc.</p>
+                </div>
+            </div>
+            <a id="WhatsApplink" onclick="sendWhatsApp()" class="button">Comprar</a>
+        </div>
+    </div>
+    <script>
+        function sendWhatsApp() {
+        var whatsappUrl = "https://wa.me/4497575374/?text=Vela%20aromatica%20Unique"
+        window.open(whatsappUrl, '_blank');
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

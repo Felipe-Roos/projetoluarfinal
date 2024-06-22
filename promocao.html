@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promoções - Luar</title>
+    <link rel="stylesheet" href="CSS/promocao.css">
+</head>
+<body>
+    <div class="header">
+        <img src="img/logo.png" alt="Luar">
+    </div>
+    <nav>
+        <ul>
+            <li> <a href="index.html">Home</a></li>
+            <li><a href="telahtml.html">Produtos</a></li>
+            <li><a href="mrkt.html">Marketing Olfativo</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h2>DESCONTOS FEITOS EXCLUSIVAMENTE PARA VOCÊ!</h2>
+        <div class="product">
+            <img src="img/promo1.png" alt="Kit velas - Unique e Oh, Happy Day!">
+            <h3>Kit velas - Unique e Oh, Happy Day!</h3>
+            <p>R$161,82</p>
+            <div class="content-container">
+                <button class="toggle-button" data-target="content1" >Descrição do item</button>
+                <div  class="content-texto" id="content1" >
+                    <p>Estas são as informações que podem ser exibidas ou ocultadas. Você pode colocar qualquer conteúdo aqui, como texto, imagens, vídeos, etc.</p>
+                </div>
+            </div>
+            <a  class="button" onclick="sendWhatsApp(event)"data-message="Unique e Oh, Happy Day">EU QUERO</a>
+        </div>
+        <div class="product">
+            <img src="img/promo2.png" alt="Kit velas - Oh, Happy Day! e Chá Branco">
+            <h3>Kit velas - Oh, Happy Day! e Chá Branco</h3>
+            <p>R$107,82</p>
+            <div class="content-container">
+                <button class="toggle-button" data-target="content2">Descrição do item</button>
+                <div class="content-texto" id="content2">
+                    <p>Estas são as informações que podem ser exibidas ou ocultadas. Você pode colocar qualquer conteúdo aqui, como texto, imagens, vídeos, etc.</p>
+                </div>
+            </div>
+            <a  class="button" onclick="sendWhatsApp(event)"data-message="Oh happy Day e Chá Branco">EU QUERO</a>
+        </div>
+        <div class="product">
+            <img src="img/promo3.png" alt="Kit velas - Desjardins e Unique">
+            <h3>Kit velas - Desjardins e Unique</h3>
+            <p>R$188,82</p>
+            <div class="content-container">
+                <button class="toggle-button" data-target="content3" >Descrição do item</button>
+                <div  class="content-texto" id="content3" >
+                    <p>Estas são as informações que podem ser exibidas ou ocultadas. Você pode colocar qualquer conteúdo aqui, como texto, imagens, vídeos, etc.</p>
+                </div>
+            </div>
+            <a  class="button" onclick="sendWhatsApp(event)"data-message="Desjardins e Unique">EU QUERO</a>
+        </div>
+        <div class="product">
+            <img src="img/promo4.png" alt="Kit velas - Desjardins e Chá Branco">
+            <h3>Kit velas - Desjardins e Chá Branco</h3>
+            <p>R$134,82</p>
+            <div class="content-container">
+                <button class="toggle-button" data-target="content4" >Descrição do item</button>
+                <div  class="content-texto" id="content4" >
+                    <p>Estas são as informações que podem ser exibidas ou ocultadas. Você pode colocar qualquer conteúdo aqui, como texto, imagens, vídeos, etc.</p>
+                </div>
+            </div>
+            <a class="button" onclick="sendWhatsApp(event)"data-message="Desjardins e Chá">EU QUERO</a>
+        </div>
+    </div>
+    <script>
+        function sendWhatsApp(event) {
+            let msg = event.target.getAttribute('data-message');
+        var whatsappUrl = `https://wa.me/4497575374/?text=${msg}`
+        window.open(whatsappUrl, '_blank');
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
